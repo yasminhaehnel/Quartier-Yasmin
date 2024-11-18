@@ -68,7 +68,6 @@ ul {
 	gap: 2em;
 	height: 3em;
 	font-family: "Fredoka", sans-serif;
-	/* font-weight: bold; */
 	color: #7e7d7d;
 }
 
@@ -90,7 +89,7 @@ li.selected {
 	text-align: left;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	padding: 15rem 5rem 0rem;
+	padding: 5rem 5rem 0rem;
 	background: #fadfc6;
 	position: relative;
 }
@@ -371,7 +370,6 @@ footer p {
 
 	nav.open {
 		right: 0; /* Navigation in die Ansicht schieben */
-		/* margin: 0em; */
 	}
 
 	/* Animation für das Burger-Icon */
@@ -391,7 +389,7 @@ footer p {
 		display: grid;
 		grid-template-columns: 1fr; /* Eine Spalte */
 		padding: 10rem 2rem 0rem; /* Weniger Padding für mobile Ansicht */
-		text-align: center; /* Inhalte zentrieren */
+		text-align: center; /* Zentrierte Ausrichtung */
 	}
 
 	.slider h1 {
@@ -404,7 +402,10 @@ footer p {
 	}
 
 	.slider .text-content {
-		margin-bottom: 2rem; /* Abstand zum Bild */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 
 	.slider .image-content {
@@ -414,6 +415,10 @@ footer p {
 	.slider .image-content img {
 		max-width: 90%;
 		height: auto;
+	}
+
+	.slider .button {
+		margin: 2rem auto 0 auto;
 	}
 
 	.Vorstellung {

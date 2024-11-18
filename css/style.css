@@ -12,6 +12,7 @@ body {
 	padding-top: 5em;
 	padding-bottom: 0;
 	margin: 0;
+	font-family: "Fredoka", sans-serif;
 	background-color: var(--dark-color);
 }
 
@@ -78,7 +79,6 @@ nav {
 	position: fixed;
 	top: 5em;
 	z-index: 999;
-	font-family: "Fredoka", sans-serif;
 }
 
 ul {
@@ -90,6 +90,9 @@ ul {
 	align-items: center;
 	gap: 2em;
 	height: 3em;
+	font-family: "Fredoka", sans-serif;
+	font-size: 1em;
+	font-weight: 600;
 	color: #7e7d7d;
 }
 
@@ -132,7 +135,7 @@ li.selected {
 	background-color: var(--background-color);
 	border-radius: 0.7rem;
 	overflow: hidden;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 8px rgba(99, 48, 0, 0.5);
 }
 
 .card-code {

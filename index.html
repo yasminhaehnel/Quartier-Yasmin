@@ -1,63 +1,102 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Quartier</title>
-		<link rel="stylesheet" href="css/fonts.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/mobile.css" />
+		<title>Quartier Home</title>
+		<link rel="stylesheet" href="css/home.css" />
 	</head>
 	<body>
-		<header>
-			<a href="home.html">
-				<img
-					src="images/Icons/logo-quartier.png"
-					alt="Quartier Logo"
-					class="logo"
-				/>
-			</a>
-			<div id="burger-menu" aria-expanded="false" role="button">
+		<div id="wrapper">
+	 <header class="header">
+    <a href="index.html"> <img src="images/Icons/logo-quartier.png" alt="Quartier Logo" class="logo" /> </a>
+    <div id="burger-menu" aria-expanded="false" role="button">
 				<div class="bar"></div>
 				<div class="bar"></div>
 				<div class="bar"></div>
 			</div>
-			<nav class="nav">
-				<ul>
-					<li><a href="home.html">Home</a></li>
-					<li data-group="all">Quartier</li>
-					<div class="filter-container">
-						<label for="animal-filter"
-							>Filter nach Kategorie:</label
-						>
-						<select id="animal-filter">
-							<option value="all">Alle</option>
-							<option value="A">Raubtiere</option>
-							<option value="B">Giftig</option>
-							<option value="C">Reptilien</option>
-							<option value="D">Meeresbewohner</option>
-							<option value="E">Meeresgiganten</option>
-							<option value="F">Großsäuger</option>
-							<option value="G">Landsäugetiere</option>
-							<option value="H">Vögel</option>
-						</select>
-					</div>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<div id="wrapper"></div>
-		</main>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ueberuns">Über uns</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="quartett.html">Quartier</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="slider">
+            <div class="text-content">
+            <h1>Quartier – </h1>
+        <h2>Dein wildes Kartenspiel-Abenteuer in die Welt der Tiere!</h2>
+            <a href="quartett.html" class="button">Quartier entdecken</a>
+            </div>
+            <div class="image-content">
+                <img src="images/slider.png" alt="Tiere des Quartetts"> 
+            </div>
+        </section>
 
-		<footer>
+        <section id="ueberuns" class="Vorstellung">
+            <div class="text">
+                <h3>Mit Liebe zum Spiel und zur Wildnis</h3>
+                <p>
+                   Bei Quartier! steht die Freude am Spielen und Entdecken im Mittelpunkt. Wir sind ein kleines, kreatives Team mit einer großen Leidenschaft für Tiere und Spiele. Unser Ziel ist es, Wissen, Spaß und Abenteuer in einem Kartenspiel zu vereinen, das die ganze Familie begeistert. Mit viel Liebe zum Detail haben wir Quartier! entwickelt, um dir die faszinierende Welt der wilden Tiere näherzubringen. Ob Löwen, Elefanten oder Krokodile – jede Karte steckt voller spannender Fakten und beeindruckender Illustrationen. Wir möchten nicht nur unterhalten, sondern auch inspirieren und Neugier wecken.
+<br> <br><b>Danke, dass du Teil unseres Abenteuers wirst – wir freuen uns, dein Spielerlebnis wilder zu machen! 🐾
+                </b></p>
+            </div>
+             <div class="image-vorstellung">
+            <img src="images/verpackung.png" alt="Bildbeschreibung"> 
+            </div>
+        </section>
+
+        <section id="design" class="design">
+            <h4>Design mit Herz und Pfotenabdruck</h4>
+            <p>
+                Das Design von <b>Quartier</b> wurde mit viel Liebe zum Detail entwickelt, um Kindern die faszinierende Welt der Tiere auf spielerische Weise näherzubringen. Unsere Flatart-Illustrationen sind bewusst einfach und klar gehalten, damit die Tiere sofort erkennbar sind und visuell begeistern. Jede Karte ist farbenfroh gestaltet und lädt dazu ein, die Schönheit und Vielfalt der Tierwelt zu entdecken – ganz ohne Ablenkungen. So verbinden wir modernes Design mit einem Look, der Kinder und Erwachsene gleichermaßen anspricht. Unsere Illustrationen machen das Lernen zu einem echten Hingucker! 🐾
+            </p>
+        </section>
+
+        <section class="services">
+            <div class="services-grid">
+                <div class="service">
+                    <div class="service-icon">
+                            <img src="images/Icons/family.png" alt="family" />
+                        </div>
+                        <div class="content">
+                            <h5> <b>Spielspaß für die ganze Familie</b></h5>
+                            <p>Ob jung oder alt – <b>Quartier</b> bringt alle an einen Tisch. Spielerisch die Welt der Tiere entdecken und dabei spannende Fakten sammeln, während der Spaß garantiert nicht zu kurz kommt!</p>
+                        </div>
+                    
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                            <img src="images/Icons/idea.png" alt="idea" />
+                        </div>
+                        <div class="content">
+                            <h5> <b>Durchdacht bis ins kleinste Detail</b></h5>
+                            <p>Von den liebevoll gestalteten Flatart-Illustrationen bis hin zu den leicht verständlichen Regeln – jedes Element von <b>Quartier</b> wurde mit viel Sorgfalt und Kreativität entwickelt, um ein perfektes Spielerlebnis zu bieten.</p>
+                        </div>
+                </div>
+                <div class="service">
+                     <div class="service-icon">
+                            <img src="images/Icons/nachhaltig.png" alt="nachhaltig" />
+                        </div>
+                        <div class="content">
+                            <h5> <b>Nachhaltig und verantwortungsvoll produziert</b></h5>
+                            <p>Wir legen Wert auf unsere Umwelt: <b>Quartier</b> wird aus hochwertigen, umweltfreundlichen Materialien hergestellt – für ein Spielvergnügen mit gutem Gewissen.</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
 			<p>&copy; 2024 Quartier</p>
 			<ul class="footer-menue">
 				<li><a href="#">Impressum</a></li>
 				<li><a href="#">Datenschutz</a></li>
 			</ul>
 		</footer>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="script/animaldata.js"></script>
-		<script src="script/main.js"></script>
-	</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script/home.js"></script>
+</body>
 </html>

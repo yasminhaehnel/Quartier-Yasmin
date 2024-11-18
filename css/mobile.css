@@ -1,3 +1,24 @@
+#burger-menu {
+	display: none; /* Standardmäßig ausblenden */
+	flex-direction: column;
+	justify-content: space-between;
+	width: 1.9em;
+	height: 1.5em;
+	cursor: pointer;
+	position: absolute;
+	right: 1em;
+	top: 5em;
+	z-index: 1100;
+}
+
+#burger-menu .bar {
+	width: 100%;
+	height: 0.3em;
+	background-color: #c16126;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
 @media screen and (max-width: 600px) {
 	#wrapper {
 		display: grid;
@@ -7,7 +28,7 @@
 	}
 
 	body {
-		padding-top: 20em;
+		padding-top: 5em;
 	}
 
 	header {
@@ -17,6 +38,7 @@
 		margin: 0;
 		justify-content: center;
 		width: 100%;
+		height: 8em;
 		position: fixed;
 		top: 0;
 		z-index: 1000;
@@ -27,23 +49,62 @@
 		height: 5em;
 	}
 
-	nav {
-		height: auto;
+	#burger-menu {
+		display: flex; /* Burger-Icon anzeigen */
 	}
 
-	.card-content {
-		margin: 0 auto;
+	nav {
+		position: fixed;
+		top: 0;
+		right: -100%; /* Navigation standardmäßig außerhalb der Ansicht */
+		width: 70%;
+		height: 100%;
+		background-color: #fffefe;
+		box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+		transition: right 0.3s ease;
+		z-index: 1000;
+		display: flex;
+		flex-direction: column;
+		padding-top: 10em;
 	}
 
 	nav ul {
 		flex-direction: column;
-		padding: 0;
 		margin: 0;
+		padding: 0;
 		list-style: none;
+		text-align: center;
 	}
 
 	nav ul li {
-		margin: 1em 0; /* Fügt Abstand zwischen den Listenelementen hinzu */
+		margin: -0.5em 0;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+		margin: -0.5em 0;
+	}
+
+	nav.open {
+		right: 0; /* Navigation in die Ansicht schieben */
+		margin: 0em;
+	}
+
+	/* Animation für das Burger-Icon */
+	#burger-menu.open .bar:nth-child(1) {
+		transform: rotate(45deg) translate(8px, 8px);
+	}
+
+	#burger-menu.open .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	#burger-menu.open .bar:nth-child(3) {
+		transform: rotate(-45deg) translate(5px, -5px);
+	}
+
+	.card-content {
+		margin: 0 auto;
 	}
 
 	.button-group {
@@ -65,7 +126,7 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
 		gap: 5em;
-		padding: 5em;
+		padding: 10em;
 	}
 
 	.card-content {

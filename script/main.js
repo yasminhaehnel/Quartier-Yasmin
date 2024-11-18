@@ -159,3 +159,16 @@ $(document).ready(function () {
 		$("#animal-filter").val("all");
 	});
 });
+
+//Burgermenu
+$(document).ready(function () {
+	const $burgerMenu = $("#burger-menu");
+	const $nav = $("nav");
+
+	$burgerMenu.on("click", function () {
+		const isExpanded = $(this).attr("aria-expanded") === "true";
+		$(this).attr("aria-expanded", !isExpanded);
+		$(this).toggleClass("open");
+		$nav.toggleClass("open");
+	});
+});

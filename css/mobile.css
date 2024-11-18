@@ -1,0 +1,85 @@
+@media screen and (max-width: 600px) {
+	#wrapper {
+		display: grid;
+		grid-template-columns: 1fr; /* Eine Spalte */
+		gap: 5em;
+		padding: 5em;
+	}
+
+	body {
+		padding-top: 20em;
+	}
+
+	header {
+		display: flex;
+		background-color: #fffefe;
+		padding: 0;
+		margin: 0;
+		justify-content: center;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 1000;
+	}
+
+	header img {
+		width: auto;
+		height: 5em;
+	}
+
+	nav {
+		height: auto;
+	}
+
+	.card-content {
+		margin: 0 auto;
+	}
+
+	nav ul {
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	nav ul li {
+		margin: 1em 0; /* Fügt Abstand zwischen den Listenelementen hinzu */
+	}
+
+	.button-group {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.5em;
+	}
+
+	.button-group button {
+		flex: 1 1 auto; /* Buttons teilen sich den Platz gleichmäßig */
+		max-width: calc(50% - 1em); /* Maximal die Hälfte der Breite */
+		margin: 0.5em;
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+	#wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+		gap: 5em;
+		padding: 5em;
+	}
+
+	.card-content {
+		margin: 0 auto;
+	}
+
+	.button-group {
+		display: flex;
+		justify-content: space-evenly; /* Buttons gleichmäßig verteilen */
+		flex-wrap: wrap;
+		gap: 1em;
+	}
+
+	.button-group button {
+		flex: 0 1 45%; /* Buttons nehmen etwa 45% der Breite ein */
+	}
+}

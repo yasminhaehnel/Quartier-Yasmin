@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quartier</title>
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/mobile.css" />
+	</head>
+	<body>
+		<header>
+			<a href="home.html">
+				<img
+					src="images/Icons/logo-quartier.png"
+					alt="Quartier Logo"
+					class="logo"
+				/>
+			</a>
+		</header>
+		<nav class="nav">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li data-group="all">Quartier</li>
+				<div class="filter-container">
+					<label for="animal-filter">Filter nach Kategorie:</label>
+					<select id="animal-filter">
+						<option value="all">Alle</option>
+						<option value="A">Raubtiere</option>
+						<option value="B">Giftig</option>
+						<option value="C">Reptilien</option>
+						<option value="D">Meeresbewohner</option>
+						<option value="E">Meeresgiganten</option>
+						<option value="F">Großsäuger</option>
+						<option value="G">Landsäugetiere</option>
+						<option value="H">Vögel</option>
+					</select>
+				</div>
+				<!-- <li data-group="A">Raubtiere</li>
+				<li data-group="B">Giftig</li>
+				<li data-group="C">Reptilien</li>
+				<li data-group="D">Meeresbewohner</li>
+				<li data-group="E">Meeresgiganten</li>
+				<li data-group="F">Großsäuger</li>
+				<li data-group="G">Landsäugetiere</li>
+				<li data-group="H">Vögel</li> -->
+			</ul>
+		</nav>
+
+		<main>
+			<div id="wrapper"></div>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Quartier</p>
+			<ul class="footer-menue">
+				<li><a href="#">Impressum</a></li>
+				<li><a href="#">Datenschutz</a></li>
+			</ul>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="script/animaldata.js"></script>
+		<script src="script/main.js"></script>
+	</body>
+</html>
